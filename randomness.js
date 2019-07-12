@@ -23,9 +23,10 @@ const students = [
 // END OF GLOBAL VARIABLES //
 /////////////////////////////
 function randomNumber() {
-     const number = Math.floor(Math.random() * 21) + 1;
-     console.log(number);
+    //  const number = Math.floor(Math.random() * 21) + 1;
+     return Math.floor(Math.random()*10);
 }
+console.log("this is a random number :" + randomNumber());
 randomNumber();
 
 function randomLetter() {
@@ -43,7 +44,7 @@ function randomFoods() {
 randomFoods();
 
 function randomStudent() {
-    
+
     const decimal3 = Math.floor(Math.random() * 6) + 1;
     console.log(students[decimal3])
 }
@@ -51,5 +52,9 @@ function randomStudent() {
 randomStudent();
 
 function randomGroup() {
-
+    let student1 = Math.floor(Math.random() * 6) + 1;
+    let student2 = Math.floor(Math.random() * 6) + 1;
+    console.log(students[student1]);
+    console.log(students[student2]); 
 }
+randomGroup();
